@@ -4,6 +4,7 @@ import SafeAreaView from 'react-native-safe-area-view';
 import {ErrorPage, PageHeader} from '../../Components'
 import SkeletonContent from '../SkeletonContent'
 import {Color,LightColor} from "../../res/Colors"
+import CommitsTransformer from '../../Server/Transformer/CommitsTransformer'
 import {request} from '@octokit/request'
 
 
@@ -17,16 +18,6 @@ export default class Homepage extends Component<Props>{
 
   componentDidMount(){
     this.getCommits()
-  }
-
-  async getCommits(){
-    try {
-      commits = await request('GET /repos/inzaw/GMAsses/commits')
-      this.setState({loading:false,commits:commits.data})
-    }
-    catch(error){
-      this.setState({pageState:PageStates.ERROR,loading:false})
-    }
   }
 
   state = {
@@ -51,14 +42,25 @@ export default class Homepage extends Component<Props>{
   onRefresh=()=>{
      this.setState({ refreshing: true }, async () => {
        try{
-         commits = await request('GET /repos/inzaw/GMAsses/commits')
-         console.log('commits',commits.data);
-         this.setState({loading:false,commits:commits.data,refreshing:false})
+         commits = await request('GET /repos/lodash/lodash/commits')
+         transformedCommits = CommitsTransformer.backward(commits.data)
+         this.setState({loading:false,commits:transformedCommits,refreshing:false})
        }
        catch (e){
          this.setState({ refreshing: false});
        }})
      }
+
+   async getCommits(){
+     try {
+       commits = await request('GET /repos/lodash/lodash/commits')
+       transformedCommits = CommitsTransformer.backward(commits.data)
+       this.setState({loading:false,commits:transformedCommits})
+     }
+     catch(error){
+       this.setState({pageState:PageStates.ERROR,loading:false})
+     }
+   }
 
   render(){
     return(<>
@@ -95,9 +97,9 @@ export default class Homepage extends Component<Props>{
             { key: obj.item.id, width: 100, height: 5, marginTop: 10}
           ]}
           >
-            {obj.item.commit !=null && <>
-              <Text style={{color: Color.black, fontSize: 14, fontFamily: 'SF Pro Display Bold'}}>{obj.item.commit.message.split('\n')[0]}</Text>
-              <Text style={{color: Color.black, fontSize: 12, fontFamily: 'SF Pro Display Light', marginLeft: 5}}><Text style={{color:Color.primary}}>{obj.item.commit.author.name}</Text> committed hash {obj.item.sha} </Text>
+            {obj.item.author !=null && <>
+              <Text style={{color: Color.black, fontSize: 14, fontFamily: 'SF Pro Display Bold'}}>{obj.item.message.split('\n')[0]}</Text>
+              <Text style={{color: Color.black, fontSize: 12, fontFamily: 'SF Pro Display Light', marginLeft: 5}}><Text style={{color:Color.primary}}>{obj.item.author}</Text> committed hash {obj.item.sha} </Text>
             </>}
           </SkeletonContent>
         </View>
