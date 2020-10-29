@@ -48,6 +48,17 @@ export default class Homepage extends Component<Props>{
     ],
   }
 
+  onRefresh=()=>{
+     this.setState({ refreshing: true }, async () => {
+       try{
+         commits = await request('GET /repos/inzaw/GMAsses/commits')
+         console.log('commits',commits.data);
+         this.setState({loading:false,commits:commits.data,refreshing:false})
+       }
+       catch (e){
+         this.setState({ refreshing: false});
+       }})
+     }
 
   render(){
     return(<>
@@ -102,6 +113,9 @@ export default class Homepage extends Component<Props>{
      showsVerticalScrollIndicator={false}
      contentContainerStyle={{paddingTop: 20}}
      keyExtractor={this.keyExtractor}
+     refreshControl={
+       <RefreshControl refreshing={this.state.refreshing} onRefresh={this.onRefresh} colors={[Color.primary]} enabled={this.state.pageState===PageStates.AVAILABLE}/>
+     }
    />
 </>
 }
