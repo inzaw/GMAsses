@@ -40,6 +40,21 @@
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
 		ED2971652150620600B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2971642150620600B7C4FE /* JavaScriptCore.framework */; };
+		69D9BCC927AE47D08ACFC97C /* SF Pro Display Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC82C8EEFC914AAEA43682A9 /* SF Pro Display Black.ttf */; };
+		F8BC2431FF254AA29AB7D875 /* SF Pro Display Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A05B346B047445868488DFBE /* SF Pro Display Bold.ttf */; };
+		59ADBF76F1B743AE8BE73D8D /* SF Pro Display Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AEC76B8DDF024B6FA157E433 /* SF Pro Display Heavy.ttf */; };
+		10373DFCB69B48C7997DB1E3 /* SF Pro Display Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 909BC9ABFCEA4BE293F94471 /* SF Pro Display Italic.ttf */; };
+		58C69C32A97544F49DBEFB61 /* SF Pro Display Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D20E2263AED64F05965CF267 /* SF Pro Display Light.ttf */; };
+		8663362700474BEA85A660EF /* SF Pro Display Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFFB0650BBB049DB95635D41 /* SF Pro Display Medium.ttf */; };
+		2AC2C00DB17048A6802BE4AE /* SF Pro Display Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4724924C771F4889978D1EDC /* SF Pro Display Semibold.ttf */; };
+		84E74639662D4212AE6D61B4 /* SF Pro Display Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 012D0920BB1F4079A0E3D3A7 /* SF Pro Display Thin.ttf */; };
+		C6026962FE8146998C29DC7D /* SF Pro Display Ultralight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFAB8D4A73214B16B3B58A7E /* SF Pro Display Ultralight.ttf */; };
+		E93DD330AB324D1C8B7F6915 /* SF Pro Text Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D11A17A974994295B56EB656 /* SF Pro Text Bold.ttf */; };
+		B6A4DDC9C8C146C8B77A9F9B /* SF Pro Text Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9017CA9521044FED8E9B9D09 /* SF Pro Text Heavy.ttf */; };
+		9F33DA10CE4C42069BB1321E /* SF Pro Text Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84A5D32F19F34367B277EFE7 /* SF Pro Text Light.ttf */; };
+		D1579F4E95554809B75114C1 /* SF Pro Text Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE4CD211C2AA473ABC87521F /* SF Pro Text Medium.ttf */; };
+		76517D230A7A45FA8285F41A /* SF Pro Text Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17764B6E1F3C444E8F65BFDE /* SF Pro Text Regular.ttf */; };
+		DC3061B7C0594FA5817860F2 /* SF Pro Text Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6FA65013943544C98FB0FE02 /* SF Pro Text Semibold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -347,6 +362,21 @@
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		BC82C8EEFC914AAEA43682A9 /* SF Pro Display Black.ttf */ = {isa = PBXFileReference; name = "SF Pro Display Black.ttf"; path = "../assets/fonts/SF Pro/SF Pro Display Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A05B346B047445868488DFBE /* SF Pro Display Bold.ttf */ = {isa = PBXFileReference; name = "SF Pro Display Bold.ttf"; path = "../assets/fonts/SF Pro/SF Pro Display Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AEC76B8DDF024B6FA157E433 /* SF Pro Display Heavy.ttf */ = {isa = PBXFileReference; name = "SF Pro Display Heavy.ttf"; path = "../assets/fonts/SF Pro/SF Pro Display Heavy.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		909BC9ABFCEA4BE293F94471 /* SF Pro Display Italic.ttf */ = {isa = PBXFileReference; name = "SF Pro Display Italic.ttf"; path = "../assets/fonts/SF Pro/SF Pro Display Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D20E2263AED64F05965CF267 /* SF Pro Display Light.ttf */ = {isa = PBXFileReference; name = "SF Pro Display Light.ttf"; path = "../assets/fonts/SF Pro/SF Pro Display Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EFFB0650BBB049DB95635D41 /* SF Pro Display Medium.ttf */ = {isa = PBXFileReference; name = "SF Pro Display Medium.ttf"; path = "../assets/fonts/SF Pro/SF Pro Display Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4724924C771F4889978D1EDC /* SF Pro Display Semibold.ttf */ = {isa = PBXFileReference; name = "SF Pro Display Semibold.ttf"; path = "../assets/fonts/SF Pro/SF Pro Display Semibold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		012D0920BB1F4079A0E3D3A7 /* SF Pro Display Thin.ttf */ = {isa = PBXFileReference; name = "SF Pro Display Thin.ttf"; path = "../assets/fonts/SF Pro/SF Pro Display Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FFAB8D4A73214B16B3B58A7E /* SF Pro Display Ultralight.ttf */ = {isa = PBXFileReference; name = "SF Pro Display Ultralight.ttf"; path = "../assets/fonts/SF Pro/SF Pro Display Ultralight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D11A17A974994295B56EB656 /* SF Pro Text Bold.ttf */ = {isa = PBXFileReference; name = "SF Pro Text Bold.ttf"; path = "../assets/fonts/SF Pro/SF Pro Text Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9017CA9521044FED8E9B9D09 /* SF Pro Text Heavy.ttf */ = {isa = PBXFileReference; name = "SF Pro Text Heavy.ttf"; path = "../assets/fonts/SF Pro/SF Pro Text Heavy.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		84A5D32F19F34367B277EFE7 /* SF Pro Text Light.ttf */ = {isa = PBXFileReference; name = "SF Pro Text Light.ttf"; path = "../assets/fonts/SF Pro/SF Pro Text Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EE4CD211C2AA473ABC87521F /* SF Pro Text Medium.ttf */ = {isa = PBXFileReference; name = "SF Pro Text Medium.ttf"; path = "../assets/fonts/SF Pro/SF Pro Text Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		17764B6E1F3C444E8F65BFDE /* SF Pro Text Regular.ttf */ = {isa = PBXFileReference; name = "SF Pro Text Regular.ttf"; path = "../assets/fonts/SF Pro/SF Pro Text Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6FA65013943544C98FB0FE02 /* SF Pro Text Semibold.ttf */ = {isa = PBXFileReference; name = "SF Pro Text Semibold.ttf"; path = "../assets/fonts/SF Pro/SF Pro Text Semibold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -585,6 +615,7 @@
 				00E356EF1AD99517003FC87E /* GMAssesTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				4F1BD57DB01F45A0B418066E /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -610,6 +641,29 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		4F1BD57DB01F45A0B418066E /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				BC82C8EEFC914AAEA43682A9 /* SF Pro Display Black.ttf */,
+				A05B346B047445868488DFBE /* SF Pro Display Bold.ttf */,
+				AEC76B8DDF024B6FA157E433 /* SF Pro Display Heavy.ttf */,
+				909BC9ABFCEA4BE293F94471 /* SF Pro Display Italic.ttf */,
+				D20E2263AED64F05965CF267 /* SF Pro Display Light.ttf */,
+				EFFB0650BBB049DB95635D41 /* SF Pro Display Medium.ttf */,
+				4724924C771F4889978D1EDC /* SF Pro Display Semibold.ttf */,
+				012D0920BB1F4079A0E3D3A7 /* SF Pro Display Thin.ttf */,
+				FFAB8D4A73214B16B3B58A7E /* SF Pro Display Ultralight.ttf */,
+				D11A17A974994295B56EB656 /* SF Pro Text Bold.ttf */,
+				9017CA9521044FED8E9B9D09 /* SF Pro Text Heavy.ttf */,
+				84A5D32F19F34367B277EFE7 /* SF Pro Text Light.ttf */,
+				EE4CD211C2AA473ABC87521F /* SF Pro Text Medium.ttf */,
+				17764B6E1F3C444E8F65BFDE /* SF Pro Text Regular.ttf */,
+				6FA65013943544C98FB0FE02 /* SF Pro Text Semibold.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -692,7 +746,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 940;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -1057,6 +1111,21 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				69D9BCC927AE47D08ACFC97C /* SF Pro Display Black.ttf in Resources */,
+				F8BC2431FF254AA29AB7D875 /* SF Pro Display Bold.ttf in Resources */,
+				59ADBF76F1B743AE8BE73D8D /* SF Pro Display Heavy.ttf in Resources */,
+				10373DFCB69B48C7997DB1E3 /* SF Pro Display Italic.ttf in Resources */,
+				58C69C32A97544F49DBEFB61 /* SF Pro Display Light.ttf in Resources */,
+				8663362700474BEA85A660EF /* SF Pro Display Medium.ttf in Resources */,
+				2AC2C00DB17048A6802BE4AE /* SF Pro Display Semibold.ttf in Resources */,
+				84E74639662D4212AE6D61B4 /* SF Pro Display Thin.ttf in Resources */,
+				C6026962FE8146998C29DC7D /* SF Pro Display Ultralight.ttf in Resources */,
+				E93DD330AB324D1C8B7F6915 /* SF Pro Text Bold.ttf in Resources */,
+				B6A4DDC9C8C146C8B77A9F9B /* SF Pro Text Heavy.ttf in Resources */,
+				9F33DA10CE4C42069BB1321E /* SF Pro Text Light.ttf in Resources */,
+				D1579F4E95554809B75114C1 /* SF Pro Text Medium.ttf in Resources */,
+				76517D230A7A45FA8285F41A /* SF Pro Text Regular.ttf in Resources */,
+				DC3061B7C0594FA5817860F2 /* SF Pro Text Semibold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
