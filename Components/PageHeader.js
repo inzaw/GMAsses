@@ -1,25 +1,15 @@
 import React from 'react'
-import {View, Text} from 'react-native'
+import {View, Text, Image} from 'react-native'
 import SafeAreaView from 'react-native-safe-area-view';
 import {Color} from "../res/Colors"
-import PropTypes from 'prop-types';
 
-  /*
-  Props
-    -title
-  */
 
 PageHeader = (props) => (
-  <SafeAreaView style = {{backgroundColor: Color.primary}}>
-    <View style={{width: '100%', paddingVertical: 20, flexDirection: 'row', alignItems: 'center', justifyContent: 'center'}}>
-        <Text style={{color: Color.white, fontSize: 18, fontFamily: 'SF Pro Text Regular'}} numberOfLines={1}>{props.title}</Text>
+  <SafeAreaView style = {{backgroundColor: Color.black}}>
+    <View style={{width: '100%', paddingVertical: 15, flexDirection: 'row', alignItems: 'center', justifyContent: 'center'}}>
+        <Image resizeMode="cover" style={{height:30,width:30}} source={require('../images/logo.png')} tintColor={Color.white}/>
     </View>
   </SafeAreaView>
 )
-
-
-PageHeader.propTypes = {
-  title: PropTypes.string.isRequired,
-}
 
 export default PageHeader
