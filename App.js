@@ -7,23 +7,12 @@
  */
 
 import React, {Component} from 'react';
-import {createAppContainer ,createSwitchNavigator} from "react-navigation";
-import {SplashScreen,Homepage} from './Containers'
-import NavigationService from './NavigationService';
+import {Homepage} from './Containers'
 
 export default class App extends Component<Props> {
   render() {
     return (
-        <AppContainer ref={navigatorRef => {
-          NavigationService.setTopLevelNavigator(navigatorRef);
-        }}/>
+        <Homepage/>
     );
   }
 }
-
-  const InitialNavigator = createSwitchNavigator({
-    Splash: SplashScreen,
-    Homepage: Homepage,
-  });
-
-  AppContainer = createAppContainer(InitialNavigator);
