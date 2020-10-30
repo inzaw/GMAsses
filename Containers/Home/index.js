@@ -8,13 +8,19 @@ import CommitsTransformer from '../../Server/Transformer/CommitsTransformer'
 import {request} from '@octokit/request'
 import {HomeStr} from '../../res/Strings'
 
-
+/* PageStates defines the different possible options for a page:
+  - Error: when a page fails to fetch its information, an error page should appear to let the user know there is an error
+  and gives him the option to try again
+  - Available: when a page did not fail yet, it is considered to be available, it could be still fetching the information from an api or successfully fetched them
+*/
 const PageStates = {
   AVAILABLE: 'AVAILABLE',
   ERROR: 'ERROR'
 }
 
-
+/* This class fetches the different commits done by a public repository (owned by Zeinab Awada, username:inzaw)
+  - Every commit tile will include the message title, the author name and the hash of this commit
+*/
 export default class Homepage extends Component<Props>{
 
   componentDidMount(){
@@ -40,6 +46,9 @@ export default class Homepage extends Component<Props>{
     ],
   }
 
+/* When the user drags down the screen, a refresh control object shows whose function is below
+  - this function updates the commits, if the function fails the old commits will stay visible
+*/
   onRefresh=()=>{
      this.setState({ refreshing: true }, async () => {
        try{
@@ -122,8 +131,6 @@ export default class Homepage extends Component<Props>{
    />
 </>
 }
-
-
 }
 
 const styles = StyleSheet.create({
