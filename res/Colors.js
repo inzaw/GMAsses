@@ -1,3 +1,5 @@
+/* This file shows and centralize the different colors used in the application
+*/
 export const Color = {
   primary: "#008AFF",
   white: "#FFFFFF",
