@@ -5,9 +5,9 @@ import {Color} from "../res/Colors"
 
 
 PageHeader = (props) => (
-  <SafeAreaView style = {{backgroundColor: Color.black}}>
-    <View style={{width: '100%', paddingVertical: 15, flexDirection: 'row', alignItems: 'center', justifyContent: 'center'}}>
-        <Image resizeMode="cover" style={{height:30,width:30}} source={require('../images/logo.png')} tintColor={Color.white}/>
+  <SafeAreaView style = {{backgroundColor: Color.primary}}>
+    <View style={{width: '100%', paddingVertical: 10, flexDirection: 'row', alignItems: 'center', justifyContent: 'center'}}>
+        <Image resizeMode="cover" style={{height:45,width:45}} source={require('../images/logo.png')}/>
     </View>
   </SafeAreaView>
 )
