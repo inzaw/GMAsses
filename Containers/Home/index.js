@@ -6,6 +6,7 @@ import SkeletonContent from '../SkeletonContent'
 import {Color,LightColor} from "../../res/Colors"
 import CommitsTransformer from '../../Server/Transformer/CommitsTransformer'
 import {request} from '@octokit/request'
+import {HomeStr} from '../../res/Strings'
 
 
 const PageStates = {
@@ -99,7 +100,7 @@ export default class Homepage extends Component<Props>{
           >
             {obj.item.author !=null && <>
               <Text style={{color: Color.black, fontSize: 14, fontFamily: 'SF Pro Display Bold'}}>{obj.item.message.split('\n')[0]}</Text>
-              <Text style={{color: Color.black, fontSize: 12, fontFamily: 'SF Pro Display Light', marginLeft: 5}}><Text style={{color:Color.primary}}>{obj.item.author}</Text> committed hash {obj.item.sha} </Text>
+              <Text style={{color: Color.black, fontSize: 12, fontFamily: 'SF Pro Display Light', marginLeft: 5}}><Text style={{color:Color.primary}}>{obj.item.author}</Text> {HomeStr.CommittedMessage} {obj.item.sha} </Text>
             </>}
           </SkeletonContent>
         </View>
