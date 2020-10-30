@@ -1,3 +1,24 @@
+/*
+  Transformer function used on the response of get commits from the github api
+  - it takes an array of objects where every object looks like this:
+    ...
+    sha:
+    commit:{
+      ...,
+      author:{
+      ...
+      name:
+    },
+      message:
+  }
+  - it generates an array were each object looks like:
+    {
+    sha:
+    author:
+    message:
+  }
+*/
+
 import {createTransformer} from './Transformer';
 
 const Commit = {
