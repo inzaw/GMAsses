@@ -1,4 +1,5 @@
-/* This file shows and centralize the different colors used in the application
+/*
+  This file shows and centralize the different colors used in the application
 */
 export const Color = {
   primary: "#008AFF",
@@ -9,7 +10,9 @@ export const Color = {
 
 
 
-/* Global Color Functions */
+/*
+  Global Color Functions
+*/
 export const LightColor = (color) => {
   return color + '80'
 }
