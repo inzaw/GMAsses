@@ -1,3 +1,7 @@
+/*
+  This file shows and centralize the different strings used in the application
+*/
+
 export const ErrorPageStr = {
   Title: 'Something Went Wrong',
   Subtitle: 'Please try again'
