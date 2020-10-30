@@ -4,6 +4,10 @@ import SafeAreaView from 'react-native-safe-area-view';
 import {Color} from "../res/Colors"
 import {Images} from "../res/Images"
 
+/*
+  A component that resembles a pageHeader for the application,
+  this component should be centralized to be uniformed for the whole application
+*/
 
 PageHeader = (props) => (
   <SafeAreaView style = {{backgroundColor: Color.primary}}>
