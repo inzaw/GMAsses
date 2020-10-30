@@ -8,6 +8,7 @@ import {ErrorPageStr} from '../res/Strings'
 
 export default class ErrorPage extends Component {
   /*
+  A component that appears when a page fails in fetching some information from an api
   Props
   -onTryAgainClicked
   */
