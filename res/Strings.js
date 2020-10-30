@@ -8,5 +8,6 @@ export const ErrorPageStr = {
 }
 
 export const HomeStr = {
-  CommittedMessage: 'committed hash'
+  CommittedMessage: 'committed hash',
+  RefreshError: "Couldn't refresh commits. Please try again later"
 }

@@ -7,6 +7,7 @@ import {Color,LightColor} from "../../res/Colors"
 import CommitsTransformer from '../../Server/Transformer/CommitsTransformer'
 import {request} from '@octokit/request'
 import {HomeStr} from '../../res/Strings'
+import Toast, {DURATION} from 'react-native-easy-toast'
 
 /* PageStates defines the different possible options for a page:
   - Error: when a page fails to fetch its information, an error page should appear to let the user know there is an error
@@ -48,6 +49,7 @@ export default class Homepage extends Component<Props>{
 
 /* When the user drags down the screen, a refresh control object shows whose function is below
   - this function updates the commits, if the function fails the old commits will stay visible
+  - when api call fails, a red toast will appear at the top of the app
 */
   onRefresh=()=>{
      this.setState({ refreshing: true }, async () => {
@@ -57,7 +59,9 @@ export default class Homepage extends Component<Props>{
          this.setState({loading: false, commits: transformedCommits, refreshing: false})
        }
        catch (e){
-         this.setState({ refreshing: false});
+         this.setState({ refreshing: false},()=>{
+            this.refs.toast.show(HomeStr.RefreshError,850);
+         });
        }})
      }
 
@@ -76,6 +80,11 @@ export default class Homepage extends Component<Props>{
     return(<>
       <PageHeader/>
       <SafeAreaView style={{flex: 1, justifyContent: 'center', alignItems: 'center', paddingHorizontal: 30}}>
+      <Toast ref="toast" style={{borderRadius: 0,backgroundColor: Color.red,width: '100%',minHeight:35,flexWrap: 'wrap'}}
+        positionValue={0}
+        position={'top'}
+        textStyle={{color:Color.white,fontSize: 13,textAlign: 'center'}}
+      />
           <View style={{flex:1, width: "100%", height: "100%"}}>
             {
               {
@@ -123,7 +132,7 @@ export default class Homepage extends Component<Props>{
      data={this.state.loading?this.state.commitsPlaceholder: this.state.commits}
      renderItem={this.returnCommit}
      showsVerticalScrollIndicator={false}
-     contentContainerStyle={{paddingTop: 20}}
+     contentContainerStyle={{paddingTop: 25}}
      keyExtractor={this.keyExtractor}
      refreshControl={
        <RefreshControl refreshing={this.state.refreshing} onRefresh={this.onRefresh} colors={[Color.primary]} enabled={this.state.pageState===PageStates.AVAILABLE}/>
